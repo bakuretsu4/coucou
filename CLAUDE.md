@@ -7,6 +7,7 @@ Coucou is a native macOS app: Mochi, a small animated character living in the Ma
 - `docs/SPEC.md`, `docs/INTEGRATIONS.md` — behaviour, views, states, integrations (in French).
 - `design/prototype/notch-buddy.html` — original prototype, the visual source of truth. `design/captures/` — target screenshots.
 - `docs/*.html` — the GitHub Pages site (privacy, terms, support, legal notice).
+- `windows/` — the Windows port (Tauri 2: Rust backend + TypeScript frontend). `linux/` — the Linux port, same frontend with a Wayland layer-shell island and a Unix-socket relay (Claude Code only); see `linux/README.md`. Neither is built by the Xcode project.
 
 ## Build
 ```
