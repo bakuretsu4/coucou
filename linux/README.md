@@ -103,8 +103,10 @@ Files: settings in `~/.config/coucou/`; relay, inbox and log in
 
 ## Troubleshooting
 
-- **Blank island, or nothing appears** (often NVIDIA): start it with
-  `WEBKIT_DISABLE_DMABUF_RENDERER=1 coucou`.
+- **Exits at once with `Error 71 (Protocol error) dispatching to Wayland display`:**
+  that is WebKitGTK's DMA-BUF renderer. Coucou turns it off by default
+  (`WEBKIT_DISABLE_DMABUF_RENDERER=1`); if you set that variable to `0` yourself,
+  unset it.
 - **Log:** `~/.local/share/coucou/coucou.log` says whether the island got a layer-shell
   surface and whether the relay is listening.
 - **`Install hooks…` says the relay is missing:** restart Coucou, or check the log line
